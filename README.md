@@ -1,16 +1,42 @@
-# React + Vite
+# Training Course Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Training Course Dashboard built using React JS and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Technologies Used
+- React JS & Vite
+- Tailwind CSS
+- React Router DOM
+- Lucide React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Course list with progress bars
+- Live search by course title
+- Category filter (works with search)
+- Course details page
+- Mark as Completed (updates progress to 100%)
+- No courses found message
+- Responsive design
 
-## React Compiler
+## How to Run
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone or download the repository.
+2. Open the project folder.
+3. Install dependencies: `npm install`
+4. Run the project: `npm run dev`
 
-## Expanding the ESLint configuration
+## Components & State
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **CourseDashboard:** Displays courses, search and filters.
+- **CourseCard:** Shows course details and progress.
+- **CourseDetails:** Displays course information and completion button.
+- **SearchBar & CategoryFilter:** Handle searching and filtering.
+
+React `useState` manages course progress, search and category. `filter()` handles search and category together, while `map()` updates completed courses.
+
+Sample data is used without a backend. Progress resets on refresh.
+
+## Project Links
+
+**Live Demo:** https://trainingcoursedashboard.vercel.app/
+
+**GitHub:** https://github.com/Pratimakushwa/Training-Course-Dashboard
